@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Challenge</title>
+
+
+    <style>
+
+        .header, .footer{
+            background: black;
+            color: white;
+            text-align: center;
+        }
+
+        .header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+
+        .content-block{
+            position: absolute;
+            width: auto;
+            margin:auto;
+            max-width: 100%;
+            max-height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .content-block img{
+            display: block;
+            height:auto;
+        }
+
+
+        .navigation{
+            margin-top: 8px;
+            background: black;
+            color: white;
+            text-align: center;
+        }
+
+        @media only screen and (max-device-width: 900px){
+            .content-block img{
+                width:98vw;
+            }
+        }
+        @media only screen and (min-device-width: 700px){
+            .content-block img{
+                max-height:80vh;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    Header
+</div>
+
+<div class="wrapper">
+    <div class="content-block">
+        <img src="https://via.placeholder.com/600x800.png" alt="Image">
+        <div class="navigation">
+            Navigation
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    footer
+</div>
+</body>
+</html>
