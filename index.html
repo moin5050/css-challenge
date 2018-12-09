@@ -55,12 +55,19 @@
 
         @media only screen and (max-device-width: 900px){
             .content-block img{
-                width:98vw;
+                max-width:98vw;
             }
         }
         @media only screen and (min-device-width: 700px){
             .content-block img{
                 max-height:80vh;
+            }
+        }
+
+        /* Landscape */
+        @media screen and (orientation:landscape) {
+            .content-block img{
+                max-height:75vh;
             }
         }
 
